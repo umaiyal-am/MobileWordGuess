@@ -1,0 +1,41 @@
+/*
+Student Info: Name=Umaiyal Arcot Murugesan, ID=13128
+Subject: CS557B_HW4_Summer_2015
+Author: Umai
+Filename: mobileGame.css
+Date and Time: Aug 10, 2015 10:25:59 PM
+Project Name: MobileWordGuess
+*/
+/* 
+    Created on : Aug 10, 2015, 10:25:59 PM
+    Author     : Umai
+*/
+
+.custom-fieldset .ui-controlgroup-controls {
+    width: 100%;
+}
+
+.custom-fieldset .ui-controlgroup-controls .ui-checkbox {
+    width: 20%;
+}
+
+.ui-panel-inner {
+    padding:0px; /*make the buttons flush edge to edge*/
+}
+.ui-controlgroup {
+    margin:0; /*make the buttons flush to the top*/
+}
+#header {
+    height:54px;
+}
+#bars-button {
+    margin:7px;
+}
+
+.ui-btn.pickButton{
+    width: 200px !important;
+}
+
+.ui-btn.dropButton{
+    width: 200px !important;
+}

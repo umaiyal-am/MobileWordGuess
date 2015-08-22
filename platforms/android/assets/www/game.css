@@ -1,0 +1,212 @@
+/*
+Student Info: Name=Umaiyal Arcot Murugesan, ID=13128
+Subject: CS557B_HW2_Summer_2015
+Author: Umai
+Filename: game.css
+Date and Time: Jun 25, 2015 11:36:06 PM
+Project Name: WordGuess
+*/
+/* 
+    Created on : Jun 25, 2015, 11:36:06 PM
+    Author     : Umai
+*/
+
+html {
+    background-color: black;
+}
+header {
+background-image: url("/WordGuess/img/holder.jpg");
+font-family:cursive;
+font-style:italic;
+font-size: 35px;
+color:gold;
+height:75px;
+border: 2px ridge gold;
+margin-bottom: 3px;
+text-align: center;
+}
+
+nav {
+    background-color: goldenrod;
+    border: 2px ridge black;
+    height:fit-content;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin:0;
+}
+
+
+article {
+    height:500px;
+    background-image: url("/WordGuess/img/wood.jpg");
+    background-color: silver;
+    float: right;
+}
+
+aside {
+    height: 500px;
+}
+
+footer {
+    height:40px;
+    background-color: darkgoldenrod;
+    color:white;
+    margin-top: 5px;
+    border: 2px ridge goldenrod;
+    text-align: center;
+}
+
+#home {
+    background-image: url("/WordGuess/img/scrabble2.jpg");
+}
+.links {
+    color: black;
+    text-decoration: underline;
+    padding-right:  10px;
+   
+}
+
+.scrabble {
+                /* height: 80px; */
+                width: 90%;
+                margin: 5px;
+                background-color: transparent;
+                float: left;
+            }
+             
+.buttons {
+        height: 80px;
+        width: 90%;
+        margin: 30px;
+        background-color: transparent;
+        float: left;
+        padding:20px;
+}
+           
+ 
+#quitBt, #submitBt, #cancelBt, #newBt {
+    width:15%;
+    height:40px;
+    background-color:maroon;
+    color:white;
+    margin-right: 10px;
+}
+
+
+[data-pick-target] {
+                height: 80px;
+                width: 10%;
+                margin: 20px;
+                background-color: maroon;
+                border:2px solid darkred;
+                float: left;
+                
+            }            
+[data-drop-target] {
+                height: 80px;
+                width: 10%;
+                margin: 20px;
+                background-color: maroon ;
+                border:2px solid white;
+                float: left;
+                
+            }
+
+article> .scrabble > [data-drop-target]> h2 {
+              text-align: center;
+              background-color: transparent;
+              color: white;         
+            }
+            
+aside>img {
+    width: 100%;
+    height: 500px;
+}
+
+
+   
+   tr.userEntry, td.userEntry {
+    border: 1px ridge white;
+    padding:8px;
+    text-align: center;
+   } 
+   
+ 
+   
+ 
+table.tables > th,tr,td{
+    border-collapse: collapse;
+    border: 2px ridge maroon;
+    padding:5px;
+    text-align: center;
+   }
+
+     
+#logTable {
+    color: white;
+    font-family: monospace;
+    border: 3px ridge maroon;
+    border-collapse: collapse;
+    margin:20px;
+}
+
+   
+#timer {
+    margin-left: 30%;
+    height: 40px;
+    width: 15%;
+    font-size: 40px;
+    text-align: center;
+}
+
+     
+
+@media screen and (min-width: 480px) { 
+
+header {
+width:100%;
+}
+
+nav {
+    width:100%;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+article {
+    width:80%;  
+}
+
+aside {
+    width:20%;    
+}
+
+footer {
+    width:100%;
+}
+}
+   
+   
+   
+   @media screen and (max-width: 480px) {
+       header, nav {
+           width: 100%;
+       } 
+       aside {
+           width:30%;
+       }        
+       article {
+           width:70%; 
+       }
+       
+       footer {
+           width:100%;
+           float: bottom;
+       }
+   }

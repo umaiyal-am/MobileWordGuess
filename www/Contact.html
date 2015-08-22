@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Student Info: Name=Umaiyal Arcot Murugesan, ID=13128
+Subject: CS557B_HW4_Summer_2015
+Author: Umai
+Filename: Contact.html
+Date and Time: Aug 18, 2015 10:10:59 PM
+Project Name: MobileWordGuess
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="cordova.js"></script>
+<script>
+function onBodyLoad() {
+	document.addEventListener("deviceready",onDeviceReady, false);
+}
+function onDeviceReady() {
+	navigator.notification.alert("onDeviceReady");
+}
+function takePhoto() {
+	navigator.camera.getPicture(onCameraSuccess, onCameraError);
+}
+function onCameraSuccess(imageURL) {
+	navigator.notification.alert("onCameraSuccess: " + imageURL);
+}
+function onCameraError(e) {
+	navigator.notification.alert("onCameraError: " + e);
+}
+</script>
+</head>
+<body onload="onBodyLoad()">
+<h1>Example 6</h1>
+<p>Using the PhoneGap Camera API<br />
+<input type="button" value="Take a Picture" onclick="takePhoto();">
+</p>
+</body>
+</html>
